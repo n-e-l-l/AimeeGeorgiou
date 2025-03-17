@@ -161,7 +161,7 @@
 @media screen and (max-width: 1200px){
     
     #statement p, #statement a{
-        font-size: 1rem !important;
+        font-size: 1rem;
         
     }
 }
@@ -191,6 +191,8 @@
         border-radius: 0;
         justify-self: center;
         align-self: center;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     #statementImg {
         height: 45vh;

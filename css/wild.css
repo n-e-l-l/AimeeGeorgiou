@@ -1,14 +1,17 @@
 
-section {
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section:first-of-type {
+
+  padding-bottom: 20px !important;
+
+}
+
+section:last-of-type{
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 768px){
 section:last-of-type{
   /* display: none; */
-  min-height: 85vh;
+  /* min-height: 85vh; */
 }
 }
