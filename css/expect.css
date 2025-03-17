@@ -1,0 +1,150 @@
+svg { 
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: -1;
+}
+
+clipPath{
+    transform: scale(1.2) translate(-50px, 0px);
+}
+
+@media screen and (max-width: 960px){
+    clipPath{
+        transform: translatex(-50px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    clipPath{
+        transform: translate(-120px, -70px);
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+
+}    
+
+@media screen and (max-width: 768px){
+    section:nth-child(odd) {
+        background-color: rgba(226, 246, 249, 0.2);
+    }
+    
+    section:nth-child(even) {
+        background-color: rgba(254, 248, 237, 0.2);
+    }
+}
+
+section:last-of-type{
+    /* display: none; */
+    height: 40vh;
+    width: 100%;
+}
+
+
+#room {
+    width: 60%;
+    border-radius: 10px;
+}
+
+#expectImg1,
+#expectImg2 { 
+    display: none;
+}
+@media screen and (max-width: 768px){
+    #expectImg1 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/expect.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    #expectImg2 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/expect2.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.thigh {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#thigh");
+    clip-path: url('#thigh');
+    background: url('/imgs/expect.JPG') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    
+}
+.shin {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#shin");
+    clip-path: url('#shin');
+    background: url('/imgs/expect2.JPG') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    
+}
+.hip {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#hip");
+    clip-path: url('#hip');
+    background: url('/imgs/tumericlayer.jpg')center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #f39f09;
+    z-index: -1;
+    
+}
+.foot {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#foot");
+    clip-path: url('#foot');
+    background: url('/imgs/bluelayer.jpg');
+    z-index: -1;
+     
+}

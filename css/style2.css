@@ -1,0 +1,536 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    font-family: 'Fauna One', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Stardos Stencil', cursive;
+    background-color: #fff0d6;
+
+}
+
+footer{
+    width: 100%;
+    background: url('/imgs/bluelayer.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+
+.contact {
+    height: 100%;
+    font: 1.2rem 'Fauna One', serif;
+    padding: 40px;
+}
+
+.contact a, 
+.contact p,
+.contact h4 {
+    background: none;
+    border: none;
+    color: white !important; 
+    text-decoration: none;
+}
+.contact h4 {
+    padding-bottom: 5px;
+}
+
+
+img {
+    width: 100%;
+}
+
+span {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+nav {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: url("/imgs/tumericlayer.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #f39f09;
+    z-index: 99;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-links li a { 
+    color: black;
+    text-decoration: none;
+    font: 1.4rem 'Stardos Stencil', cursive;
+    opacity:0.8;
+}
+.nav-links li a:hover {
+    text-shadow: none;
+    opacity: 1;
+}
+.nameLogo a {
+
+    font: 1.2rem 'Fauna One', serif;
+}
+/* @media screen and (max-width: 1400px){
+    .nav-links {
+        width: 85%;
+    }
+    .nav-links li a { 
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .nav-links {
+        width: 90%;
+    }
+    .nav-links li a { 
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .nav-links {
+        width: 100%;
+    }
+    .nav-links li a { 
+        font-size: 0.9rem;
+    }
+} */
+@media screen and (max-width: 5400px){
+    
+
+    main {
+        margin-top: 10vh;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        display: flex;
+        background: url("/imgs/tumericlayer-mobile.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: #f39f09;
+
+    }
+
+    .nameLogo {
+        position: fixed;
+        left:0;
+        top:0;
+        height:10vh;
+        display:flex;
+        color: white;
+    }
+
+    .nameLogo a {
+        text-decoration:none;
+        color: white;
+        margin: auto;
+        padding: 10px;
+        font: 1.8rem 'Fauna One', serif;
+    }
+    
+    .hamburger {
+        cursor: pointer;
+        margin: auto;
+        z-index: 2;
+    }
+    
+    .icon {
+        color: white;
+        font-size: 2rem;
+        transform: rotate(-90deg);
+        transition: all 0.5s ease;
+    }
+    .icon.rotate {
+        transform: rotate(90deg);
+        font-size: 2.5rem;
+        
+    }
+
+    .nav-links{
+        position: fixed;
+        /* background: #C49102; */
+        background: url("/imgs/tumericlayer-mobile.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background-color: #f39f09;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0px at 50% 5%);
+        -webkit-clip-path: circle(0px at 50% 5%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        padding-top: 50px;
+        padding-bottom: 15vh;
+
+    }
+
+    .nav-links.open {
+        clip-path: circle(800px at 50% 5%);
+        -webkit-clip-path: circle(800px at 50% 5%);
+        pointer-events: all;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 2.2rem;
+        color: white;
+    }
+
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.3s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.5s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 0.8s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+}
+.selected {
+    /* text-decoration: line-through; */
+    border-bottom: 3px solid #f39f09;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    padding-top:15vh;
+    /* display: flex; 
+    align-items: center;
+    justify-content: space-evenly; */
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px 50px 35%;
+}
+
+section:first-of-type {
+    padding-top: 25vh;
+}
+
+section ul{
+    background-color: white;
+    align-self: start;
+    padding: 10px 0 10px 10px;
+    line-height: 1.5;
+    max-width: 90ch;
+}
+
+section ul, 
+section li, 
+section a,
+section a:link{
+    font: 1.2rem 'Fauna One', serif;
+    list-style: none;
+    line-height: 1.4;
+}
+
+section ul {
+    border-radius: 10px;
+}
+
+section a,
+section a:link {
+    color: #C49102;
+    text-decoration: none;
+}
+section a:visited {
+    text-decoration: line-through;
+}
+
+section a:hover {
+    font-style: italic;
+    /* text-shadow: 5px 3px 10px gold; */
+}
+
+section h2 {
+    text-transform: capitalize;
+    font: 2rem 'Oswald', sans-serif;
+    align-self: start;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 10px solid white;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+section p{
+    font: 1.2rem 'Fauna One', serif;
+    align-self: start;
+    padding: 0  0 10px 10px;
+    line-height: 1.5;
+    max-width: 90ch;
+    background-color: white;
+    border: 10px solid white;
+    /* border-radius: 10px; */
+}
+
+section p:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+section p:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section quote{
+    max-width: 640px;
+    align-self: flex-end;
+    text-align: end;
+    padding-top: 50px;
+    border-radius: 10px;
+}
+
+section quote p{
+    font: 1.8rem 'Stardos Stencil', cursive;
+    /* font-weight: 200;
+    line-height: normal; */
+}
+
+
+@media screen and (max-width: 960px){
+    section{
+        padding: 100px 80px;
+    }
+    section li{
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    section {
+        padding: 10px 0;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    section h2{
+        align-self: center;
+        background: white;
+        color: black;
+        /* border: none; */
+        font-size: 2.4rem;
+    }
+
+    section p{
+        width: 96%;
+        align-self: center;
+        font-size: 1.2rem;
+        padding: 0 10px 10px 20px;
+        line-height: 1.5;
+        max-width: 90ch;
+    }
+    section aside{
+        width: 96%;
+    }
+    section quote{
+        max-width: 350px;
+        align-self: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    section quote p{
+        font-size: 1.4rem;
+
+    }
+    section ul, 
+    section li, 
+    section a{
+        font-size: 1.2rem;
+    }
+    section ul{
+        padding: 0 10px 0 30px;
+    }
+    section:first-of-type {
+        padding-top: 15vh;
+    }
+    section:last-of-type{
+        /* display: none; */
+        min-height: 15vh;
+    }
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+    height: auto;
+
+}
+
+@media screen and (max-width: 768px){
+    img{
+        width: 96%;
+        display: block;
+        height: auto;
+    
+    }
+}
+
+
+.landing {
+    width: 100%;
+    z-index: 50;
+    padding-bottom: 50px;
+}
+
+.landing p {
+    max-width: 55ch;
+    padding: 20px 30px 0 40px;
+    font: 1.2rem 'Fauna One', serif;
+}
+
+.landing h2 {
+    font: 2.5rem 'Oswald', sans-serif;
+    font-weight: normal;
+    max-width: 100ch;
+    padding:0 30px 0 40px;
+}
+
+
+h1{
+    font-size: 60px;
+    opacity: 0;
+}
+
+
+
+/* .tumeric {
+    background: url('/imgs/tumericlayer.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 60%;
+    height: 50vh;
+    opacity: 0.7;
+} */
+
+aside {
+    width: 100%;
+    background-color: white;
+    border: 10px solid #f39f09;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+aside img{
+    width: 50%;
+}
+
+.caption{
+    width: 100%;
+}
+.caption p { 
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+.caption a {
+    font-size: 0.9rem !important;
+}
+.caption p:first-of-type {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+    aside {
+        flex-wrap: wrap;
+    }
+    aside img{
+        width: 100%;
+    }
+}
+
+#paypal {
+    background: white;
+    border-radius: 20px;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    transform: translateY(-20px);
+    overflow: hidden;
+    
+}
+#paypal form {
+    transform: translateY(30px);
+    place-self: center;
+    
+}
+
+@media screen and (max-width: 768px){
+    .bodyShapes {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,256 @@
+#contact {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 10vh;
+}
+ 
+.contact{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.contact-item {
+    width: 50%;
+    min-height: 45vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.contact-item:first-of-type {
+    background: url('/imgs/contact.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.paws {
+    background: url('/imgs/contactbw.JPG')center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contact-logo {
+    background: url('/imgs/althaealogo_web.png') no-repeat center center;
+    background-size: 50%;
+}
+
+.contactInfo {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contactInfo h2 { 
+    font-size: 1.3rem;
+    align-self: center;
+    padding: 5px 25px;
+    border: none;
+}
+
+.contactInfo p{
+    font-size: 1rem;
+    align-self: center;
+    padding:5px 10px;
+    border: none;
+    width: 30ch;
+    /* margin: 0 auto; */
+}
+
+.contactInfo img{
+    width: 25px;
+    margin-left: 20px;
+
+}
+
+.contactInfo span {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.contactInfo a {
+    font-size: 1rem !important;
+}
+
+@media screen and (max-width: 960px){
+    .contact-item {
+        width: 100%;
+    }
+    .paws {
+        order: 1;
+        min-height: 40vh;
+    }
+    .text {
+        order:2;
+    }
+    .tree {
+        order: 3
+    }
+    .contact-logo{
+        order: 4;
+        background-size: 60%;
+        margin-bottom: 35vh;
+    }
+    .contactInfo p,
+    .contactInfo span,
+    .contactInfo a{
+        font-size: 1rem!important;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+    }
+
+    .contactInfo {
+        max-width: 100%;
+    }
+    .contact-item {
+        min-height: 50vh;
+    }
+    .paws {
+        min-height: 40vh;
+    }
+    .contact-logo {
+        display: none;
+    }
+    
+    textarea {
+        height: 200px;
+    }
+    form {
+        margin-bottom: 25vh;
+    }
+}
+
+.form{
+    width:30%;
+    /* align-self: stretch; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.insta{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    border: 1px solid #C49102;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+button {
+    border: 2px solid #C49102;
+    color: #C49102;
+    font: 1rem 'Stardos Stencil', cursive;
+    background-color: white;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+}
+
+form p{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+    border: none;
+    background-color: #fff0d6;
+}
+
+form p:first-of-type{
+    padding: 40px 0 20px 0;
+} 
+
+label{
+    padding-left: 10%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 960px){
+
+    .insta{
+        padding: 15px;
+    }
+    .insta img {
+        width: 30px;
+    }
+
+    input, textarea {
+        width: 60%;
+    }
+
+    #contact{
+        align-items: flex-start;
+    }
+    .form{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 50px;
+        width: 60%;
+        margin-left: 0;
+        margin-bottom: 10vh;
+        justify-content: start;
+    }
+    form {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    form p {
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    label {
+        text-align: center;
+        padding-left: 0;
+    }
+    .form{
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+}

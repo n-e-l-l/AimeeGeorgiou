@@ -1,0 +1,409 @@
+
+
+#landing {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 10vh 0 0 0;
+}
+
+#landing .ul {
+    align-self: center;
+    background: url('/imgs/home.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-color: #f39f09;
+    width: 100%;
+    max-width: 100%;
+    height: 90vh;
+    padding: 100px 0 100px 0;
+    /* margin-bottom:  40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#landing h2 {
+    color: rgb(23, 39, 39);
+    font:3rem 'Oswald', sans-serif;
+    padding-bottom: 0;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    line-height: 1.8;
+
+}
+#landing h2:hover {
+    color: #f39f09;
+    transition: 0.5s all;
+}
+
+@media screen and (max-width: 1200px){
+    #landing {
+        background-size:60%;
+    }
+
+    #landing h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    #landing h2 {
+        font-size:2.1rem;
+        
+    }
+    #landing .ul {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #landing {
+        padding-top:10vh;
+    }
+
+    #landing h2{
+        /* color: white; */
+        font: 2rem 'Stardos Stencil', cursive;
+        line-height: 1;
+        transform: skew(0deg);
+        padding: 20px;
+        text-align: center;
+    }
+    #landing .ul {
+        min-height: 60vh;
+        margin: 0;
+        padding: 80px 0;
+        justify-self: end;
+        width: 100%;
+        max-width: 100%;
+        transform: skew(-0deg) translateX(0px);
+        border-radius: 0;
+        justify-content: space-around;
+    }
+    #landing li {
+        padding-bottom: 0;
+    }
+}
+
+
+#statement {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-self: center;
+    justify-content: center;
+    align-items: stretch;
+    background-color: white;
+    /* border-radius: 20px; */
+    
+}
+
+.stretch{
+    width: 100%;
+    align-self: center;
+    /* margin-right:10px; */
+}
+.stretch a {
+    color: #f39f09;
+    font-size: 1.3rem !important;
+    line-height: 1.5;
+}
+
+#statement p {
+    
+    color: #f39f09;
+    margin: auto;
+    max-width: 80ch;
+    height: 100%;
+    background-color: white;
+    border: none;
+    padding: 40px;
+    border-radius: 0;
+    /* -webkit-border-top-left-radius: 20px; 
+    -webkit-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 0px; 
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+
+    border-top: 10px solid #f39f09;
+    border-left: 10px solid #f39f09;
+    border-bottom: 10px solid #f39f09; */
+    font-size: 1rem;
+    padding-left:15%;
+    padding-right:15%;
+}
+
+
+#statementImg {
+    width: 100%;
+    /* height: 100%; */
+    background: url('/imgs/home2.JPG') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* margin-left: 10px; */
+    /* border-bottom-right-radius: 20px; */
+    /* border-top-right-radius: 20px; */
+    
+}
+
+@media screen and (max-width: 1200px){
+    
+    #statement p, #statement a{
+        font-size: 1rem !important;
+        
+    }
+}
+
+@media screen and (max-width: 960px){
+    #statement{
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #statement {
+        width: 100%;
+        height:100%;
+        flex-direction: column;
+        margin-bottom: 0;
+        align-self: center;
+        padding: 0;
+        
+    }
+
+    #statement p {
+        width: 100%;
+        height: 100%;
+        font-size: 1.3rem;
+        border: none;
+        border-radius: 0;
+        justify-self: center;
+        align-self: center;
+    }
+    #statementImg {
+        height: 45vh;
+        order:2;
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+    }
+    .stretch {
+        display: flex;
+        flex-direction: column;
+        min-height: 45vh;
+        width: 100%;
+        order: 2;
+        border: 10px solid #f39f09;
+        background-color: white;
+    }
+
+}
+
+/* mobile logo */
+
+@media screen and (max-width: 960px){ 
+    #logomobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    #logomobile {
+        position:absolute;
+        top:0;
+        height:100vh;
+        width:100%;
+        background:url('/imgs/althaealogo_web.png') center 40% no-repeat;
+        background-size: 90%;
+        display: block;
+        z-index: -1;
+    }
+}
+#logo h1 {
+    font-size: 2.5rem;
+}
+
+/* logo  */
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .whitecircle,
+  .blackcircle1,
+  .bluecircle,
+  .blackcircle2,
+  .orangecircle,
+  .blackcircle3,
+  .logo,
+  .sun,
+  .moon {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+  }
+  .letter1,
+  .letter2,
+  .letter3,
+  .letter4,
+  .letter5,
+  .letter6,
+  .letter7,
+  .letter8,
+  .letter9,
+  .letter10,
+  .letter11 {
+    position: absolute;
+    z-index: 6;
+  }
+  
+  .whitecircle {
+    background: white;
+    clip-path: circle(100px at 50% 50%);
+    -webkit-clip-path: circle(100px at 50% 50%);
+  }
+  
+  .blackcircle1 {
+    background: black;
+    clip-path: circle(103px at 50% 50%);
+    -webkit-clip-path: circle(103px at 50% 50%);
+  }
+  .bluecircle {
+    
+    background: url('/imgs/bluelayer.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #33c2d3;
+    clip-path: circle(115px at 50% 50%);
+    -webkit-clip-path: circle(115px at 50% 50%);
+  }
+  .blackcircle2 {
+    background: black;
+    clip-path: circle(118px at 50% 50%);
+    -webkit-clip-path: circle(118px at 50% 50%);
+  }
+  .orangecircle {
+    background: url('/imgs/tumericlayer-mobile.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #f39f09;
+    clip-path: circle(180px at 50% 50%);
+    -webkit-clip-path: circle(180px at 50% 50%);
+  }
+  .blackcircle3 {
+    background: black;
+    clip-path: circle(185px at 50% 50%);
+    -webkit-clip-path: circle(185px at 50% 50%);
+  }
+  
+  
+  .logo {
+    background: url('/imgs/logo1.png') no-repeat center center;
+    background-size: 130px;
+    z-index: 5;
+  }
+  
+  
+  
+  .letter1 {
+    top: 210px;
+    left: 26%;
+  }
+  .letter2 {
+    top: 175px;
+    left: 31%;
+  }
+  .letter3 {
+    top: 155px;
+    left: 38%;
+  }
+  .letter4 {
+    top: 145px;
+    left: 47%;
+  }
+  .letter5 {
+    top: 155px;
+    left: 56%;
+  }
+  .letter6 {
+    top: 175px;
+    left: 63%;
+  }
+  .letter7 {
+    top: 210px;
+    left: 67%;
+  }
+
+
+  .letter8 {
+    top: 270px;
+    left: 30%;
+  }
+  .letter9 {
+    top: 300px;
+    left: 40%;
+  }
+  .letter10 {
+    top: 300px;
+    left: 53%;
+  }
+  .letter11 {
+    top: 270px;
+    left: 64%;
+  }
+  
+  .sun {
+    background: white;
+    clip-path: circle(15px at 50% 102px);
+  -webkit-clip-path: circle(20px at 50% 102px);
+    opacity: 1;
+    
+  }
+  .moon {
+    background: black;
+    clip-path: circle(15px at 50% 398px);
+  -webkit-clip-path: circle(20px at 50% 398px);
+    opacity: 1;
+    
+  }
+
+/* @media screen and (max-width: 768px){ 
+    .logo-container {
+        display: none;
+    }
+    #logo {
+        display: none;
+    }
+} */

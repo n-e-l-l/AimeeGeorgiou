@@ -1,0 +1,108 @@
+clipPath{
+    transform: scale(1) translate(-50px, -70px);
+}
+
+@media screen and (max-width: 960px){
+    clipPath{
+        transform: translatex(-50px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    #style p:first-of-type {
+        padding-top: 30px;
+    }
+    section:nth-child(odd) {
+        background-color: rgba(226, 246, 249, 0.2);
+    
+    }
+    
+    section:nth-child(even) {
+        background-color: rgba(254, 248, 237, 0.2);
+    }
+}
+
+#styleImg1,
+#styleImg2 { 
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    #styleImg1 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/bodystyle.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    #styleImg2 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/bodystyle2.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+ 
+.torso {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#torso");
+    clip-path: url('#torso');
+    background: url('/imgs/bodystyle.JPG') -100px 50% no-repeat;
+    z-index: -1;
+    
+}
+.arm {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#arm");
+    clip-path: url('#arm');
+    background: url('/imgs/bodystyle2.JPG');
+    z-index: -1;
+    
+}
+.hand {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#hand");
+    clip-path: url('#hand');
+    background: url('/imgs/tumericlayer.jpg');
+    background-blend-mode: overlay;
+    background-color: #f39f09;
+    z-index: -1;
+    
+}
+.breast {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: coral;
+    height: 100vh;
+    -webkit-clip-path: url("#breast");
+    clip-path: url('#breast');
+    background: url('/imgs/bluelayer.jpg');
+    z-index: -1;
+     
+}

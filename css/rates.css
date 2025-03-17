@@ -1,0 +1,119 @@
+svg { 
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+clipPath{
+    transform: scale(1) translate(-50px, -50px);
+}
+
+@media screen and (max-width: 960px){
+    clipPath{
+        transform: translatex(-50px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    clipPath{
+        transform: translate(-120px, -70px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    section:nth-child(odd) {
+        background-color: rgba(226, 246, 249, 0.2);
+    }
+    
+    section:nth-child(even) {
+        background-color: rgba(254, 248, 237, 0.2);
+    }
+}
+
+
+section:last-of-type{
+    /* display: none; */
+    height: 40vh;
+    width: 100%;
+}
+
+#rates {
+    align-self: center;
+    width: 60%;
+}
+  
+.head {
+    -webkit-clip-path: url("#head");
+    clip-path: url('#head');
+    background: url('/imgs/tumericlayer.jpg') no-repeat;
+    background-blend-mode: overlay;
+    background-color: #f39f09;
+}
+
+.jaw {
+    -webkit-clip-path: url("#jaw");
+    clip-path: url('#jaw');
+    background: url('/imgs/bluelayer.jpg') no-repeat;
+}
+
+.neck1 {
+    -webkit-clip-path: url("#neck1");
+    clip-path: url('#neck1');
+    background: url('/imgs/ratesbw.JPG') no-repeat;
+}
+
+.neck2 {
+    -webkit-clip-path: url("#neck2");
+    clip-path: url('#neck2');
+    background: url('/imgs/rates.JPG') no-repeat;
+   
+}
+
+.head,
+.jaw,
+.neck2,
+.neck1 {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+    
+}
+
+#ratesImg1,
+#ratesImg2 { 
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    #ratesImg1 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/rates.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    #ratesImg2 {
+        display: block;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/ratesbw.JPG') center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}

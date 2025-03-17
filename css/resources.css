@@ -1,0 +1,129 @@
+#resources  {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding: 15vh 5% 0 5%;
+    margin-bottom: 10vh;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.intro {
+    align-self: stretch;
+    border-radius: 10px;
+    background-color:white;
+    min-height: 38%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+}
+
+.intro p {
+    align-self: center;
+    margin: 0 auto;
+    max-width: 50ch;
+    padding: 30px;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+#resourceImg1,
+#resourceImg2 {
+    height: 30%;
+    width:100%;
+    border-radius: 10px;
+}
+#resourceImg1{
+    background: url('/imgs/resources.JPG') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+#resourceImg2{
+    background: url('/imgs/resourcesbw.JPG') center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+#links {
+    width: 50%;
+    display: flex;
+}
+
+
+
+#resources ul {
+    height: 100%;
+    background-color: white;
+    padding: 30px ;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 960px){
+    #resources{
+        padding-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #resources{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        margin-bottom: 10vh;
+        background: none;
+    }
+
+    #resources p{
+        width: 100%;
+        max-width: 60ch;
+        font-size: 1.3rem;
+        padding:5px 20px;
+        margin-right: 0;
+        
+    }
+
+    #resources ul{
+        width: 100%;
+        max-width: 90ch;
+        margin-bottom: 15px;
+        padding-top: 20px;
+        margin-top: 5px;
+    }
+
+    #resources li{
+        font-size: 1rem;
+        padding-bottom: 20px;
+        
+    }
+
+    #resources li a{
+        font-size: 1.4rem;
+        
+    }
+    #resourceImg1,
+#resourceImg2 {
+    height: 50vh;
+}
+    .leftContainer {
+        width: 100%;
+    }
+    #links {
+        width: 100%;
+        margin-bottom: 15vh;
+    }
+}

@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(63, 60, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(58, 0, 116);
+}
+
+.whitecircle,
+.blackcircle1,
+.bluecircle,
+.blackcircle2,
+.orangecircle,
+.blackcircle3,
+.logo,
+.sun,
+.moon {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+.letter1,
+.letter2,
+.letter3,
+.letter4,
+.letter5,
+.letter6,
+.letter7,
+.letter8,
+.letter9,
+.letter10,
+.letter11 {
+  position: absolute;
+}
+
+.whitecircle {
+  background: white;
+  clip-path: circle(100px at 50% 50%);
+  -webkit-clip-path: circle(100px at 50% 50%);
+}
+
+.blackcircle1 {
+  background: black;
+  clip-path: circle(103px at 50% 50%);
+  -webkit-clip-path: circle(103px at 50% 50%);
+}
+.bluecircle {
+  background-color: #33c2d3;
+  background: url('/imgs/bluelayer.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  clip-path: circle(115px at 50% 50%);
+  -webkit-clip-path: circle(115px at 50% 50%);
+}
+.blackcircle2 {
+  background: black;
+  clip-path: circle(118px at 50% 50%);
+  -webkit-clip-path: circle(118px at 50% 50%);
+}
+.orangecircle {
+  background-color: #f39f09;
+  background: url('/imgs/tumericlayer.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  clip-path: circle(180px at 50% 50%);
+  -webkit-clip-path: circle(180px at 50% 50%);
+}
+.blackcircle3 {
+  background: black;
+  clip-path: circle(185px at 50% 50%);
+  -webkit-clip-path: circle(185px at 50% 50%);
+}
+
+
+.logo {
+  background: url('/imgs/logo1.png') no-repeat center center;
+  background-size: 140px;
+  z-index: 50;
+}
+
+
+
+.letter1 {
+  top: 220px;
+  left: 110px;
+}
+.letter2 {
+  top: 160px;
+  left: 130px;
+}
+.letter3 {
+  top: 115px;
+  left: 180px;
+}
+.letter4 {
+  top: 90px;
+  left: 246px;
+}
+.letter5 {
+  top: 115px;
+  left: 310px;
+}
+.letter6 {
+  top: 160px;
+  left: 350px;
+}
+.letter7 {
+  top: 220px;
+  left: 370px;
+}
+.letter8 {
+  top: 290px;
+  left: 140px;
+}
+.letter9 {
+  top: 330px;
+  left: 200px;
+}
+.letter10 {
+  top: 330px;
+  left: 280px;
+}
+.letter11 {
+  top: 290px;
+  left: 340px;
+}
+
+.sun {
+  background-color: white;
+  clip-path: circle(15px at 50% 102px);
+  -webkit-clip-path: circle(20px at 50% 102px);
+  opacity: 1;
+  /* animation-name: r;
+  animation-duration: 1s; */
+}
+
+
+
+.moon {
+  background: black;
+  clip-path: circle(15px at 50% 398px);
+  -webkit-clip-path: circle(20px at 50% 398px);
+  opacity: 1;
+  /* animation-name: r;
+  animation-duration: 1s; */
+  
+}
+
+/* @keyframes r {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
